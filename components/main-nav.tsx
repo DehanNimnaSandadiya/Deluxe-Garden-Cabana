@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { BRAND_TAGLINE } from "@/data/constants";
 
 const links = [
   { href: "/", label: "Home" },
@@ -25,8 +26,11 @@ export function MainNav() {
           <div className="font-display text-xl tracking-wide text-palm-dark group-hover:text-sunset-muted transition-colors">
             Deluxe Garden Cabana
           </div>
+          <div className="text-[11px] text-palm-dark/50 italic">
+            {BRAND_TAGLINE}
+          </div>
           <div className="text-[11px] text-palm-dark/40">
-            Matara, Sri Lanka
+            Tissamaharama, Kataragama, Sri Lanka
           </div>
         </Link>
         <div className="hidden gap-6 text-xs tracking-[0.25em] uppercase text-palm-dark/60 md:flex">

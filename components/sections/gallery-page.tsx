@@ -58,7 +58,7 @@ export function GalleryPage() {
         <div className="max-w-2xl">
           <div className="text-[11px] uppercase tracking-[0.35em] text-palm-dark/50">Gallery</div>
           <h1 className="mt-3 font-display text-3xl tracking-[0.08em] text-palm-dark sm:text-4xl">
-            Glimpses of cabanas, gardens, and the Matara coastline.
+            Glimpses of cabanas, gardens, and the Tissamaharama coastline.
           </h1>
         </div>
 

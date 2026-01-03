@@ -7,7 +7,15 @@ export function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-palm-dark text-white">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg')] bg-cover bg-center opacity-60" />
+        {/* TODO: Replace with provided brand background image - place at /public/images/brand-bg.jpg */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-60"
+          style={{
+            backgroundImage: "url('/images/brand-bg.jpg'), linear-gradient(135deg, #065f46 0%, #047857 50%, #92400e 100%)",
+            backgroundSize: "cover",
+            backgroundPosition: "center"
+          }}
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-palm-dark/95" />
       </div>
 
@@ -21,7 +29,7 @@ export function Hero() {
           >
             <div className="max-w-xl">
               <div className="text-[11px] uppercase tracking-[0.35em] text-sand-light">
-                Matara, Sri Lanka
+                Tissamaharama, Kataragama, Sri Lanka
               </div>
               <h1 className="mt-5 font-display text-4xl tracking-[0.08em] sm:text-5xl lg:text-6xl">
                 Luxury Hidden Within Coconut Gardens

@@ -16,7 +16,7 @@ export function AboutPage() {
             About
           </div>
           <h1 className="mt-3 font-display text-3xl tracking-[0.08em] text-palm-dark sm:text-4xl">
-            A boutique, foreign–only sanctuary in the coconut gardens of Matara.
+            A boutique, foreign–only sanctuary in the coconut gardens of Tissamaharama, Kataragama.
           </h1>
         </motion.div>
 
@@ -31,7 +31,7 @@ export function AboutPage() {
             <p>
               Deluxe Garden Cabana was born from a simple idea: to create a
               deeply calm, beautifully considered space where foreign travelers
-              could experience Sri Lanka&apos;s southern coast with privacy,
+              could experience the Tissamaharama and Kataragama region of Sri Lanka&apos;s southern coast with privacy,
               subtlety, and respect for the land.
             </p>
             <p>
@@ -92,6 +92,31 @@ export function AboutPage() {
             </div>
           </motion.aside>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-20%" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-16 grid gap-8 md:grid-cols-2"
+        >
+          <div className="rounded-3xl border border-white/60 bg-white/80 p-8 shadow-subtle backdrop-blur-sm">
+            <div className="text-[11px] uppercase tracking-[0.35em] text-palm-dark/50">
+              Our Vision
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-palm-dark/80">
+              To become a beloved Sri Lankan beverage brand that delivers authentic island flavors while creating moments of refreshment, joy, and connection.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/60 bg-white/80 p-8 shadow-subtle backdrop-blur-sm">
+            <div className="text-[11px] uppercase tracking-[0.35em] text-palm-dark/50">
+              Our Mission
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-palm-dark/80">
+              To craft high-quality, refreshing drinks inspired by Sri Lanka's tropical heritage, using carefully selected ingredients and delivering a consistent, memorable experience with every sip.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

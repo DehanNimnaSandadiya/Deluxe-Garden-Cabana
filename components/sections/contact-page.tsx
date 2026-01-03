@@ -2,6 +2,14 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import {
+  CONTACT_ADDRESS,
+  CONTACT_EMAIL,
+  CONTACT_PHONE,
+  CONTACT_PHONE_TEL,
+  CONTACT_EMAIL_MAILTO,
+  GOOGLE_MAPS_URL
+} from "@/data/constants";
 
 export function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -106,7 +114,7 @@ export function ContactPage() {
                 Submit enquiry
               </button>
               <a
-                href="https://wa.me/94000000000"
+                href={`https://wa.me/${CONTACT_PHONE.replace(/\s/g, "")}`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-[11px] uppercase tracking-[0.3em] text-palm-dark/80 underline-offset-4 hover:underline"
@@ -131,25 +139,53 @@ export function ContactPage() {
           >
             <div className="rounded-3xl border border-white/60 bg-white/80 p-5 shadow-subtle backdrop-blur-sm">
               <div className="uppercase tracking-[0.3em] text-palm-dark/50">
-                WhatsApp Reservations
+                Contact Information
               </div>
-              <p className="mt-2">
-                For immediate, discreet assistance, contact our reservations
-                team via WhatsApp.
-              </p>
-              <a
-                href="https://wa.me/94000000000"
-                target="_blank"
-                rel="noreferrer"
-                className="mt-3 inline-flex rounded-full bg-sunset-muted px-6 py-2 text-[11px] tracking-[0.3em] uppercase text-white shadow-subtle"
-              >
-                Message on WhatsApp
-              </a>
+              <div className="mt-3 space-y-2">
+                <div>
+                  <div className="text-[10px] uppercase tracking-[0.25em] text-palm-dark/50">
+                    Phone
+                  </div>
+                  <a
+                    href={CONTACT_PHONE_TEL}
+                    className="mt-1 block text-sm hover:text-palm-dark transition-colors"
+                  >
+                    {CONTACT_PHONE}
+                  </a>
+                </div>
+                <div>
+                  <div className="text-[10px] uppercase tracking-[0.25em] text-palm-dark/50">
+                    Email
+                  </div>
+                  <a
+                    href={CONTACT_EMAIL_MAILTO}
+                    className="mt-1 block text-sm hover:text-palm-dark transition-colors break-all"
+                  >
+                    {CONTACT_EMAIL}
+                  </a>
+                </div>
+                <div>
+                  <div className="text-[10px] uppercase tracking-[0.25em] text-palm-dark/50">
+                    Address
+                  </div>
+                  <div className="mt-1 text-sm leading-relaxed">
+                    {CONTACT_ADDRESS}
+                  </div>
+                  <a
+                    href={GOOGLE_MAPS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block text-[11px] text-sunset-muted hover:text-palm-dark underline-offset-2 hover:underline transition-colors"
+                  >
+                    View on Google Maps →
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/60 shadow-subtle">
               <iframe
-                title="Matara, Sri Lanka"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63314.013810598094!2d80.4687711!3d5.95492035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae139210c7a0a1b%3A0x5f3b2cda4b2c1f0d!2sMatara!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
+                title="Tissamaharama, Kataragama, Sri Lanka"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63314.013810598094!2d80.4687711!3d5.95492035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae139210c7a0a1b%3A0x5f3b2cda4b2c1f0d!2sTissamaharama!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
                 width="100%"
                 height="280"
                 style={{ border: 0 }}

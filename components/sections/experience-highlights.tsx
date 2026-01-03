@@ -8,8 +8,8 @@ const items = [
     text: "Wake to palm-filtered light, move barefoot on cool stone, and spend long afternoons between garden shade and ocean air."
   },
   {
-    title: "Matara coastal lifestyle",
-    text: "Unhurried mornings, quiet beaches, and access to the energy of Matara and Mirissa when desired—never imposed."
+    title: "Tissamaharama coastal lifestyle",
+    text: "Unhurried mornings, quiet beaches, and access to the energy of Tissamaharama and Kataragama when desired—never imposed."
   },
   {
     title: "Privacy & silence",

@@ -16,7 +16,7 @@ export function ExperiencePage() {
             Experience
           </div>
           <h1 className="mt-3 font-display text-3xl tracking-[0.08em] text-palm-dark sm:text-4xl">
-            A nature-first, coastal rhythm in Matara.
+            A nature-first, coastal rhythm in Tissamaharama, Kataragama.
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-palm-dark/70">
             Deluxe Garden Cabana is crafted as a soft landing on Sri Lanka&apos;s
@@ -31,7 +31,7 @@ export function ExperiencePage() {
             body="Cabanas sit lightly within mature coconut gardens, framed by native greenery, soft sand paths, and filtered morning light. Interiors echo the landscape: stone, wood, linen, and subtle, grounding tones."
           />
           <ExperienceBlock
-            title="Matara coastal lifestyle"
+            title="Tissamaharama coastal lifestyle"
             body="Just moments from the ocean, the days are shaped by tides and sky. Swim at sunrise, wander to nearby beaches, or simply watch the color of the day change from the quiet of your terrace."
           />
           <ExperienceBlock
