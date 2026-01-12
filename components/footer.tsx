@@ -24,7 +24,7 @@ export function Footer() {
               Koko Hana Cabana Collection
             </div>
             <div className="mt-2 font-display text-xl text-palm-dark">
-              Deluxe Garden Cabana
+              Garden Retreat Cabana
             </div>
             <div className="mt-1 text-[11px] text-palm-dark/50 italic">
               {BRAND_TAGLINE}
@@ -93,7 +93,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 flex flex-col justify-between gap-4 border-t border-white/5 pt-4 text-[10px] text-palm-dark/40 sm:flex-row">
-          <div>© {new Date().getFullYear()} Deluxe Garden Cabana.</div>
+          <div>© {new Date().getFullYear()} Garden Retreat Cabana.</div>
           <div className="space-x-4">
             <span>Privacy</span>
             <span>Imprint</span>

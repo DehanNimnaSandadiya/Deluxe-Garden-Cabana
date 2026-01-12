@@ -1,6 +1,6 @@
 // Social Media URLs
-export const INSTAGRAM_URL = "https://instagram.com/";
-export const FACEBOOK_URL = "https://facebook.com/";
+export const INSTAGRAM_URL = "https://www.instagram.com/thekokohanavilla?igsh=MTE2ZnYxYm84ZnJmbg==";
+export const FACEBOOK_URL = "https://www.facebook.com/share/17qeTLroyo/?mibextid=wwXIfr";
 
 // Contact Information
 export const CONTACT_ADDRESS = "No: 674, Kwanthissapura, Tissamaharama, Kataragama, Sri Lanka";
@@ -14,4 +14,5 @@ export const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/5Fq8ZwXVAtSSKgMC7?g_st=i
 
 // Brand Tagline
 export const BRAND_TAGLINE = "Island Bliss with Every Sip";
+
 

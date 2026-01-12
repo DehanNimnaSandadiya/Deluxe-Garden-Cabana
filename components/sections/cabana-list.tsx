@@ -6,7 +6,7 @@ import { cabanas, CabanaCategory } from "@/data/cabanas";
 
 const groups: { title: CabanaCategory; items: string[] }[] = [
   {
-    title: "Deluxe Garden Cabana",
+    title: "Garden Retreat Cabana",
     items: [
       "Koko Hana – Coconut Bloom Cabana | King | 1 | 20–25 m² | 2",
       "Koko Hana – Garden Breeze Cabana | King | 1 | 20–25 m² | 2"

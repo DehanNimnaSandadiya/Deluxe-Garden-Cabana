@@ -19,7 +19,7 @@ export function ExperiencePage() {
             A nature-first, coastal rhythm in Tissamaharama, Kataragama.
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-palm-dark/70">
-            Deluxe Garden Cabana is crafted as a soft landing on Sri Lanka&apos;s
+            Garden Retreat Cabana is crafted as a soft landing on Sri Lanka&apos;s
             southern coast. Days here flow between coconut shade, warm ocean,
             and the quiet rituals of island living.
           </p>

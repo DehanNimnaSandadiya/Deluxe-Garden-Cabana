@@ -13,7 +13,7 @@ const items = [
   },
   {
     title: "Foreign–only, intentionally intimate",
-    body: "Curated for high-net-worth foreign travelers, Deluxe Garden Cabana maintains a rare sense of discretion and considered, unintrusive service."
+    body: "Curated for high-net-worth foreign travelers, Garden Retreat Cabana maintains a rare sense of discretion and considered, unintrusive service."
   }
 ];
 
@@ -37,7 +37,7 @@ export function StoryScroll() {
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-palm-dark/70">
               Inspired by the quiet luxury of Aman and the soul of Sri Lankan
-              coastal life, Deluxe Garden Cabana is an ultra-private hideaway
+              coastal life, Garden Retreat Cabana is an ultra-private hideaway
               where nature leads every moment. Here, garden, breeze, and ocean
               rhythm take precedence over noise, screens, and schedules.
             </p>

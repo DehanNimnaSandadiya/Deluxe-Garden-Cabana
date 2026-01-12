@@ -7,11 +7,10 @@ export function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-palm-dark text-white">
       <div className="pointer-events-none absolute inset-0">
-        {/* TODO: Replace with provided brand background image - place at /public/images/brand-bg.jpg */}
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-60"
           style={{
-            backgroundImage: "url('/images/brand-bg.jpg'), linear-gradient(135deg, #065f46 0%, #047857 50%, #92400e 100%)",
+            backgroundImage: "url('/images/image1.jpeg'), linear-gradient(135deg, #065f46 0%, #047857 50%, #92400e 100%)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

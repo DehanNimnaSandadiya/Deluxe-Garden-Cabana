@@ -27,7 +27,7 @@ export function ContactPage() {
             Contact & Booking
           </div>
           <h1 className="mt-3 font-display text-3xl tracking-[0.08em] text-palm-dark sm:text-4xl">
-            Begin your stay at Deluxe Garden Cabana.
+            Begin your stay at Garden Retreat Cabana.
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-palm-dark/70">
             Share your ideal dates, number of guests, and preferred cabana
@@ -90,7 +90,7 @@ export function ContactPage() {
               </Field>
               <Field label="Preferred cabana type">
                 <select className="w-full border-b border-sand-light/70 bg-transparent px-0 py-2 text-xs outline-none focus:border-palm-dark">
-                  <option>Deluxe Garden</option>
+                  <option>Garden Retreat</option>
                   <option>Tropical View</option>
                   <option>Honeymoon Coconut</option>
                   <option>Family Nature</option>

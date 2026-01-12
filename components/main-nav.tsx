@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { BRAND_TAGLINE } from "@/data/constants";
 
@@ -19,18 +20,27 @@ export function MainNav() {
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-coconut/70 backdrop-blur-lg">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="group">
-          <div className="text-[10px] tracking-[0.35em] uppercase text-palm-dark/60">
-            Koko Hana Cabana Collection
-          </div>
-          <div className="font-display text-xl tracking-wide text-palm-dark group-hover:text-sunset-muted transition-colors">
-            Deluxe Garden Cabana
-          </div>
-          <div className="text-[11px] text-palm-dark/50 italic">
-            {BRAND_TAGLINE}
-          </div>
-          <div className="text-[11px] text-palm-dark/40">
-            Tissamaharama, Kataragama, Sri Lanka
+        <Link href="/" className="group flex items-center gap-3">
+          <Image
+            src="/images/logo.jpeg"
+            alt="Garden Retreat Cabana Logo"
+            width={50}
+            height={50}
+            className="object-contain"
+          />
+          <div>
+            <div className="text-[10px] tracking-[0.35em] uppercase text-palm-dark/60">
+              Koko Hana Cabana Collection
+            </div>
+            <div className="font-display text-xl tracking-wide text-palm-dark group-hover:text-sunset-muted transition-colors">
+              Garden Retreat Cabana
+            </div>
+            <div className="text-[11px] text-palm-dark/50 italic">
+              {BRAND_TAGLINE}
+            </div>
+            <div className="text-[11px] text-palm-dark/40">
+              Tissamaharama, Kataragama, Sri Lanka
+            </div>
           </div>
         </Link>
         <div className="hidden gap-6 text-xs tracking-[0.25em] uppercase text-palm-dark/60 md:flex">

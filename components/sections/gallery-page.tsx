@@ -13,36 +13,44 @@ interface ImageItem {
 
 const images: ImageItem[] = [
   {
-    src: "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
+    src: "/images/image1.jpeg",
     category: "Cabanas"
   },
   {
-    src: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
+    src: "/images/image2.jpeg",
     category: "Gardens"
   },
   {
-    src: "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+    src: "/images/image3.png",
     category: "Experiences"
   },
   {
-    src: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
+    src: "/images/image.jpg",
     category: "Honeymoon"
   },
   {
-    src: "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
+    src: "/images/image4.jpg",
     category: "Family"
   },
   {
-    src: "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+    src: "/images/image5.jpg",
     category: "Cabanas"
   },
   {
-    src: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
+    src: "/images/image6.jpg",
     category: "Gardens"
   },
   {
-    src: "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
+    src: "/images/image7.jpg",
     category: "Experiences"
+  },
+  {
+    src: "/images/image8.jpg",
+    category: "Honeymoon"
+  },
+  {
+    src: "/images/image3-alt.jpg",
+    category: "Family"
   }
 ];
 

@@ -1,5 +1,5 @@
 export type CabanaCategory =
-  | "Deluxe Garden Cabana"
+  | "Garden Retreat Cabana"
   | "Tropical View Cabana"
   | "Honeymoon Coconut Cabana"
   | "Family Nature Cabana"
@@ -24,18 +24,17 @@ export const cabanas: Cabana[] = [
   {
     name: "Koko Hana – Coconut Bloom Cabana",
     collection: "Koko Hana Cabana Collection",
-    category: "Deluxe Garden Cabana",
+    category: "Garden Retreat Cabana",
     slug: "koko-hana-coconut-bloom-cabana",
     bed: "King",
     rooms: "1",
     size: "20–25 m²",
     capacity: "2",
-    heroImage:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
+    heroImage: "/images/image1.jpeg",
     gallery: [
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg"
+      "/images/image1.jpeg",
+      "/images/image.jpg",
+      "/images/image4.jpg"
     ],
     perfectFor: [
       "Couples seeking a quiet garden hideaway",
@@ -54,18 +53,17 @@ export const cabanas: Cabana[] = [
   {
     name: "Koko Hana – Garden Breeze Cabana",
     collection: "Koko Hana Cabana Collection",
-    category: "Deluxe Garden Cabana",
+    category: "Garden Retreat Cabana",
     slug: "koko-hana-garden-breeze-cabana",
     bed: "King",
     rooms: "1",
     size: "20–25 m²",
     capacity: "2",
-    heroImage:
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
+    heroImage: "/images/image2.jpeg",
     gallery: [
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg"
+      "/images/image2.jpeg",
+      "/images/image5.jpg",
+      "/images/image6.jpg"
     ],
     perfectFor: [
       "Long-stay guests who value gentle breezes and leafy outlooks",
@@ -90,12 +88,11 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "20–25 m²",
     capacity: "2",
-    heroImage:
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
+    heroImage: "/images/image.jpg",
     gallery: [
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg"
+      "/images/image.jpg",
+      "/images/image3-alt.jpg",
+      "/images/image4.jpg"
     ],
     perfectFor: [
       "Guests who love waking to filtered tropical light",
@@ -120,12 +117,11 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "20–25 m²",
     capacity: "2",
-    heroImage:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+    heroImage: "/images/image3.png",
     gallery: [
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg"
+      "/images/image3.png",
+      "/images/image7.jpg",
+      "/images/image8.jpg"
     ],
     perfectFor: [
       "Couples who want to feel wrapped by tropical green",
@@ -150,12 +146,11 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "30–35 m²",
     capacity: "2",
-    heroImage:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
+    heroImage: "/images/image5.jpg",
     gallery: [
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg"
+      "/images/image5.jpg",
+      "/images/image6.jpg",
+      "/images/image7.jpg"
     ],
     perfectFor: [
       "Newlyweds dreaming of a quiet, tropical sanctuary",
@@ -180,12 +175,11 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "30–35 m²",
     capacity: "3–4",
-    heroImage:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+    heroImage: "/images/image3.png",
     gallery: [
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg"
+      "/images/image3.png",
+      "/images/image7.jpg",
+      "/images/image8.jpg"
     ],
     perfectFor: [
       "Families who value calm, nature-forward stays",
@@ -210,12 +204,11 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "25–30 m²",
     capacity: "2",
-    heroImage:
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
+    heroImage: "/images/image.jpg",
     gallery: [
-      "https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg"
+      "/images/image.jpg",
+      "/images/image3-alt.jpg",
+      "/images/image4.jpg"
     ],
     perfectFor: [
       "Design-conscious travelers who appreciate subtle luxury",

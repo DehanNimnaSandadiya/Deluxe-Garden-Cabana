@@ -29,7 +29,7 @@ export function AboutPage() {
             className="space-y-6 text-sm leading-relaxed text-palm-dark/75"
           >
             <p>
-              Deluxe Garden Cabana was born from a simple idea: to create a
+              Garden Retreat Cabana was born from a simple idea: to create a
               deeply calm, beautifully considered space where foreign travelers
               could experience the Tissamaharama and Kataragama region of Sri Lanka&apos;s southern coast with privacy,
               subtlety, and respect for the land.
@@ -47,7 +47,7 @@ export function AboutPage() {
               and invite a slower pace of being.
             </p>
             <p>
-              As part of the Koko Hana Cabana Collection, Deluxe Garden Cabana
+              As part of the Koko Hana Cabana Collection, Garden Retreat Cabana
               upholds a standard of understated luxury: attentive yet discreet
               service, thoughtful amenities, and an atmosphere that feels more
               like a private residence than a traditional resort.
