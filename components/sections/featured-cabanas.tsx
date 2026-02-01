@@ -4,8 +4,19 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { cabanas } from "@/data/cabanas";
 
+const FEATURED_DISPLAY: Record<string, string> = {
+  "koko-hana-coconut-bloom-cabana": "Standard cabana",
+  "koko-hana-palm-whisper-cabana": "Honeymoon cabana",
+  "koko-hana-coconut-grove-cabana": "Family cabana",
+};
+
 export function FeaturedCabanas() {
-  const featured = cabanas.slice(0, 3);
+  // Show Deluxe Garden, Tropical View, and Family Cabana only
+  const featured = [
+    cabanas.find((c) => c.slug === "koko-hana-coconut-bloom-cabana")!, // Deluxe
+    cabanas.find((c) => c.slug === "koko-hana-palm-whisper-cabana")!, // Tropical
+    cabanas.find((c) => c.slug === "koko-hana-coconut-grove-cabana")!, // Family
+  ];
 
   return (
     <section className="border-y border-white/10 bg-coconut">
@@ -16,12 +27,11 @@ export function FeaturedCabanas() {
               Cabanas
             </div>
             <h2 className="mt-3 font-display text-3xl tracking-[0.08em] text-palm-dark sm:text-4xl">
-              Ultra-private cabanas, hidden between coconut and garden.
+              Standard, Honeymoon & Family cabanas.
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-palm-dark/70">
-              Each Koko Hana cabana is intentionally limited in number and
-              placed with care — more space between neighbors, more sky between
-              palms, more quiet between moments.
+              Each cabana is placed with care in the coconut gardens — King beds,
+              tropical views, and family-friendly options.
             </p>
           </div>
           <Link
@@ -52,10 +62,10 @@ export function FeaturedCabanas() {
                 </div>
                 <div className="flex flex-1 flex-col px-5 pb-5 pt-4">
                   <div className="text-[10px] uppercase tracking-[0.3em] text-palm-dark/50">
-                    {cabana.category}
+                    {FEATURED_DISPLAY[cabana.slug] ?? cabana.category}
                   </div>
                   <h3 className="mt-2 font-display text-lg tracking-[0.08em] text-palm-dark">
-                    {cabana.name}
+                    {FEATURED_DISPLAY[cabana.slug] ?? cabana.name}
                   </h3>
                   <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-palm-dark/70">
                     <span>{cabana.bed}</span>

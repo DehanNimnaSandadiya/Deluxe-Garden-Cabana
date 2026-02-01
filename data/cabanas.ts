@@ -1,4 +1,4 @@
-import { CABANA_INSIDE_PICS, CABANA_OUTSIDE_PICS } from "./constants";
+import { CABANA_INSIDE_PICS, CABANA_OUTSIDE_PICS, DELUXE_PICS, TROPICAL_PICS, FAMILY_PICS } from "./constants";
 
 export type CabanaCategory =
   | "Deluxe Garden Cabana"
@@ -35,13 +35,13 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "20–25 m²",
     capacity: "2",
-    heroImage: "/images/image1.jpeg",
+    heroImage: "/images/deluxe/image1.jpeg",
     gallery: [
-      "/images/image1.jpeg",
-      "/images/image.jpg",
-      "/images/image4.jpg"
+      "/images/deluxe/image1.jpeg",
+      "/images/deluxe/image4.jpg",
+      "/images/deluxe/image6.jpg"
     ],
-    insidePics: CABANA_INSIDE_PICS,
+    insidePics: DELUXE_PICS,
     outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Couples seeking a quiet garden hideaway",
@@ -77,13 +77,13 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "20–25 m²",
     capacity: "2",
-    heroImage: "/images/image2.jpeg",
+    heroImage: "/images/deluxe/image4.jpg",
     gallery: [
-      "/images/image2.jpeg",
-      "/images/image5.jpg",
-      "/images/image6.jpg"
+      "/images/deluxe/image1.jpeg",
+      "/images/deluxe/image4.jpg",
+      "/images/deluxe/image7.jpg"
     ],
-    insidePics: CABANA_INSIDE_PICS,
+    insidePics: DELUXE_PICS,
     outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Long-stay guests who value gentle breezes and leafy outlooks",
@@ -119,13 +119,13 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "20–25 m²",
     capacity: "2",
-    heroImage: "/images/image.jpg",
+    heroImage: "/images/tropical/image.jpg",
     gallery: [
-      "/images/image.jpg",
-      "/images/image3-alt.jpg",
-      "/images/image4.jpg"
+      "/images/tropical/image.jpg",
+      "/images/tropical/tropical-1.jpeg",
+      "/images/tropical/tropical-2.jpeg"
     ],
-    insidePics: CABANA_INSIDE_PICS,
+    insidePics: TROPICAL_PICS,
     outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Guests who love waking to filtered tropical light",
@@ -161,13 +161,13 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "20–25 m²",
     capacity: "2",
-    heroImage: "/images/image3.png",
+    heroImage: "/images/tropical/tropical-1.jpeg",
     gallery: [
-      "/images/image3.png",
-      "/images/image7.jpg",
-      "/images/image8.jpg"
+      "/images/tropical/image.jpg",
+      "/images/tropical/tropical-1.jpeg",
+      "/images/tropical/tropical-2.jpeg"
     ],
-    insidePics: CABANA_INSIDE_PICS,
+    insidePics: TROPICAL_PICS,
     outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Couples who want to feel wrapped by tropical green",
@@ -203,9 +203,9 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "30–35 m²",
     capacity: "2",
-    heroImage: "/images/image5.jpg",
+    heroImage: "/images/cabana-inside/inside-1.jpeg",
     gallery: [
-      "/images/image5.jpg",
+      "/images/cabana-inside/inside-1.jpeg",
       "/images/image6.jpg",
       "/images/image7.jpg"
     ],
@@ -246,13 +246,13 @@ export const cabanas: Cabana[] = [
     rooms: "1",
     size: "30–35 m²",
     capacity: "3–4",
-    heroImage: "/images/image3.png",
+    heroImage: "/images/family/family-1.jpeg",
     gallery: [
-      "/images/image3.png",
-      "/images/image7.jpg",
-      "/images/image8.jpg"
+      "/images/family/family-1.jpeg",
+      "/images/family/family-2.jpeg",
+      "/images/cabana-outside/outside-1.jpeg"
     ],
-    insidePics: CABANA_INSIDE_PICS,
+    insidePics: FAMILY_PICS,
     outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Families who value calm, nature-forward stays",
