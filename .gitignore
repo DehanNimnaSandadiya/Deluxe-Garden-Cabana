@@ -42,4 +42,6 @@ next-env.d.ts
 # OS
 Thumbs.db
 
-
+# Source image folders (images copied to public/images/)
+Cabana Inside Pics/
+Cabana Out Pics/

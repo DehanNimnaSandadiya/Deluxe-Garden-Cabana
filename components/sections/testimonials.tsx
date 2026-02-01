@@ -6,20 +6,38 @@ const testimonials = [
   {
     quote:
       "It felt like the resort had been designed around our breathing. Nothing rushed, nothing loud, just an incredibly gentle experience.",
-    guest: "A. Meyer",
-    origin: "Zurich, Switzerland"
+    guest: "Nimal Perera",
+    origin: "Colombo, Sri Lanka"
   },
   {
     quote:
       "The most peaceful days of our honeymoon. The garden light, the silence, the way the staff anticipated needs quietly—it felt truly rare.",
-    guest: "L. & J. Carter",
-    origin: "London, United Kingdom"
+    guest: "Chathurika & Ruwan Silva",
+    origin: "Kandy, Sri Lanka"
   },
   {
     quote:
-      "Our family stayed in the coconut grove cabana and found that rare balance of space for everyone, yet time together. Calm, considered, beautiful.",
-    guest: "The Nakamura Family",
-    origin: "Tokyo, Japan"
+      "Our family stayed in the Coconut Grove cabana and found that rare balance of space for everyone, yet time together. Calm, considered, beautiful.",
+    guest: "The Gunasekara Family",
+    origin: "Galle, Sri Lanka"
+  },
+  {
+    quote:
+      "Ayubowan! The Island Serenity cabana was perfect for our anniversary. The coconut gardens and warm hospitality made us feel at home.",
+    guest: "Sithara Fernando",
+    origin: "Negombo, Sri Lanka"
+  },
+  {
+    quote:
+      "We travel often but Koko Hana stands out. The Palm Whisper cabana views, the attention to detail—mata hariyata hari. We will return.",
+    guest: "Kamal & Sandya Jayawardena",
+    origin: "Sri Lanka"
+  },
+  {
+    quote:
+      "A haven of peace. The Garden Breeze cabana lived up to its name—gentle winds, lush green, and the most restful sleep we have had.",
+    guest: "Dilshan Wickramasinghe",
+    origin: "Matara, Sri Lanka"
   }
 ];
 

@@ -4,40 +4,19 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { cabanas, CabanaCategory } from "@/data/cabanas";
 
-const groups: { title: CabanaCategory; items: string[] }[] = [
-  {
-    title: "Garden Retreat Cabana",
-    items: [
-      "Koko Hana – Coconut Bloom Cabana | King | 1 | 20–25 m² | 2",
-      "Koko Hana – Garden Breeze Cabana | King | 1 | 20–25 m² | 2"
-    ]
+const groups = cabanas.reduce(
+  (acc, cabana) => {
+    const item = `${cabana.name} | ${cabana.bed} | ${cabana.rooms} | ${cabana.size} | ${cabana.capacity}`;
+    const existing = acc.find((g) => g.title === cabana.category);
+    if (existing) {
+      existing.items.push(item);
+    } else {
+      acc.push({ title: cabana.category, items: [item] });
+    }
+    return acc;
   },
-  {
-    title: "Tropical View Cabana",
-    items: [
-      "Koko Hana – Palm Whisper Cabana | King | 1 | 20–25 m² | 2",
-      "Koko Hana – Tropical Nest Cabana | King | 1 | 20–25 m² | 2"
-    ]
-  },
-  {
-    title: "Honeymoon Coconut Cabana",
-    items: [
-      "Koko Hana – Island Serenity Cabana | King | 1 | 30–35 m² | 2"
-    ]
-  },
-  {
-    title: "Family Nature Cabana",
-    items: [
-      "Koko Hana – Coconut Grove Cabana | Twin / King | 1 | 30–35 m² | 3–4"
-    ]
-  },
-  {
-    title: "Premium Garden Cabana",
-    items: [
-      "Koko Hana – Golden Palm Cabana | King | 1 | 25–30 m² | 2"
-    ]
-  }
-];
+  [] as { title: CabanaCategory; items: string[] }[]
+);
 
 export function CabanaList() {
   return (

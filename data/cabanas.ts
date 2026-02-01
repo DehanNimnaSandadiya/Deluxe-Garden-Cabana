@@ -1,5 +1,7 @@
+import { CABANA_INSIDE_PICS, CABANA_OUTSIDE_PICS } from "./constants";
+
 export type CabanaCategory =
-  | "Garden Retreat Cabana"
+  | "Deluxe Garden Cabana"
   | "Tropical View Cabana"
   | "Honeymoon Coconut Cabana"
   | "Family Nature Cabana"
@@ -16,15 +18,18 @@ export interface Cabana {
   capacity: string;
   heroImage: string;
   gallery: string[];
+  insidePics: string[];
+  outsidePics: string[];
   perfectFor: string[];
   amenities: string[];
+  roomFacilities: string[];
 }
 
 export const cabanas: Cabana[] = [
   {
     name: "Koko Hana – Coconut Bloom Cabana",
     collection: "Koko Hana Cabana Collection",
-    category: "Garden Retreat Cabana",
+    category: "Deluxe Garden Cabana",
     slug: "koko-hana-coconut-bloom-cabana",
     bed: "King",
     rooms: "1",
@@ -36,6 +41,8 @@ export const cabanas: Cabana[] = [
       "/images/image.jpg",
       "/images/image4.jpg"
     ],
+    insidePics: CABANA_INSIDE_PICS,
+    outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Couples seeking a quiet garden hideaway",
       "Design-forward travelers who appreciate minimal interiors",
@@ -48,12 +55,23 @@ export const cabanas: Cabana[] = [
       "Rain shower with botanically infused amenities",
       "Thoughtful lighting designed for nighttime calm",
       "Silent ceiling fan & discreet air conditioning"
+    ],
+    roomFacilities: [
+      "King-size bed with premium natural linens",
+      "Private garden terrace with coconut canopy",
+      "Curated tea & slow coffee corner",
+      "Rain shower with botanical amenities",
+      "Dimmable lighting",
+      "Silent ceiling fan & air conditioning",
+      "Complimentary Wi-Fi",
+      "Safe deposit box",
+      "Mini refrigerator"
     ]
   },
   {
     name: "Koko Hana – Garden Breeze Cabana",
     collection: "Koko Hana Cabana Collection",
-    category: "Garden Retreat Cabana",
+    category: "Deluxe Garden Cabana",
     slug: "koko-hana-garden-breeze-cabana",
     bed: "King",
     rooms: "1",
@@ -65,6 +83,8 @@ export const cabanas: Cabana[] = [
       "/images/image5.jpg",
       "/images/image6.jpg"
     ],
+    insidePics: CABANA_INSIDE_PICS,
+    outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Long-stay guests who value gentle breezes and leafy outlooks",
       "Remote creatives seeking silent working days",
@@ -77,6 +97,17 @@ export const cabanas: Cabana[] = [
       "Dedicated writing and reading nook",
       "Soft, dimmable bedside lighting",
       "Complimentary high-speed Wi-Fi"
+    ],
+    roomFacilities: [
+      "King-size bed with pillow menu",
+      "Louvered windows with cross-breezes",
+      "Writing and reading nook",
+      "Outdoor seating area",
+      "Rain shower",
+      "Air conditioning",
+      "High-speed Wi-Fi",
+      "Tea & coffee maker",
+      "Iron & ironing board"
     ]
   },
   {
@@ -94,6 +125,8 @@ export const cabanas: Cabana[] = [
       "/images/image3-alt.jpg",
       "/images/image4.jpg"
     ],
+    insidePics: CABANA_INSIDE_PICS,
+    outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Guests who love waking to filtered tropical light",
       "Honeymooners seeking a first or last stop in Sri Lanka",
@@ -106,6 +139,17 @@ export const cabanas: Cabana[] = [
       "Curated mini-bar with Sri Lankan touches",
       "Rain shower with separate dressing area",
       "Turn-down ritual upon request"
+    ],
+    roomFacilities: [
+      "King-size bed with cotton linens",
+      "Elevated palm canopy views",
+      "Indoor-outdoor seating",
+      "Mini-bar with Sri Lankan touches",
+      "Rain shower with dressing area",
+      "Turn-down service",
+      "Air conditioning",
+      "Wi-Fi",
+      "Hair dryer"
     ]
   },
   {
@@ -123,6 +167,8 @@ export const cabanas: Cabana[] = [
       "/images/image7.jpg",
       "/images/image8.jpg"
     ],
+    insidePics: CABANA_INSIDE_PICS,
+    outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Couples who want to feel wrapped by tropical green",
       "Guests who favor a gently cocooned atmosphere",
@@ -135,6 +181,17 @@ export const cabanas: Cabana[] = [
       "Signature scent inspired by coastal gardens",
       "Rain shower with handcrafted ceramics",
       "Filtered water & glass carafes"
+    ],
+    roomFacilities: [
+      "King-size bed with upholstered headboard",
+      "Lounging nook with floor cushions",
+      "Tropical foliage views",
+      "Rain shower with handcrafted ceramics",
+      "Filtered water & glass carafes",
+      "Air conditioning",
+      "Wi-Fi",
+      "Mini-bar",
+      "Bathrobes & slippers"
     ]
   },
   {
@@ -152,6 +209,8 @@ export const cabanas: Cabana[] = [
       "/images/image6.jpg",
       "/images/image7.jpg"
     ],
+    insidePics: CABANA_INSIDE_PICS,
+    outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Newlyweds dreaming of a quiet, tropical sanctuary",
       "Anniversary escapes and milestone celebrations",
@@ -164,6 +223,18 @@ export const cabanas: Cabana[] = [
       "Private terrace for in-cabana breakfast",
       "Soft ambient lighting and candle ritual",
       "Discreet in-cabana service on request"
+    ],
+    roomFacilities: [
+      "King-size bed with luxury linens",
+      "Open-plan lounge area",
+      "Freestanding tub or oversized rain shower",
+      "Private terrace for in-cabana breakfast",
+      "Ambient lighting & candle ritual",
+      "In-cabana service on request",
+      "Air conditioning",
+      "Wi-Fi",
+      "Premium mini-bar",
+      "Bathrobes & luxury toiletries"
     ]
   },
   {
@@ -181,6 +252,8 @@ export const cabanas: Cabana[] = [
       "/images/image7.jpg",
       "/images/image8.jpg"
     ],
+    insidePics: CABANA_INSIDE_PICS,
+    outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Families who value calm, nature-forward stays",
       "Multi-generational trips with unhurried days",
@@ -193,6 +266,18 @@ export const cabanas: Cabana[] = [
       "Child-friendly amenities upon request",
       "Spacious bathroom with generous storage",
       "Board games and analog entertainment"
+    ],
+    roomFacilities: [
+      "Twin or King bed configuration",
+      "Daybed or trundle for children",
+      "Shaded outdoor family space",
+      "Spacious bathroom with storage",
+      "Board games & entertainment",
+      "Child-friendly amenities on request",
+      "Air conditioning",
+      "Wi-Fi",
+      "Mini refrigerator",
+      "Tea & coffee maker"
     ]
   },
   {
@@ -210,6 +295,8 @@ export const cabanas: Cabana[] = [
       "/images/image3-alt.jpg",
       "/images/image4.jpg"
     ],
+    insidePics: CABANA_INSIDE_PICS,
+    outsidePics: CABANA_OUTSIDE_PICS,
     perfectFor: [
       "Design-conscious travelers who appreciate subtle luxury",
       "Couples seeking a garden sanctuary with added space",
@@ -222,6 +309,17 @@ export const cabanas: Cabana[] = [
       "Curated art and handcrafted objects",
       "Premium in-cabana bar selection",
       "Evening turndown with local sweet treats"
+    ],
+    roomFacilities: [
+      "King-size bed with luxury mattress",
+      "Defined lounge area",
+      "Warm wood accents & curated art",
+      "Premium in-cabana bar",
+      "Evening turndown with local treats",
+      "Air conditioning",
+      "Wi-Fi",
+      "Rain shower",
+      "Bathrobes & premium toiletries"
     ]
   }
 ];

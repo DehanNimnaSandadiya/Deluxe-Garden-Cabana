@@ -4,6 +4,12 @@ import { Cabana } from "@/data/cabanas";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+const testimonials = [
+  { quote: "The most peaceful stay. The cabana was exactly as pictured—clean, serene, and perfectly positioned in the garden.", guest: "Nimal Perera", origin: "Colombo, Sri Lanka" },
+  { quote: "Our honeymoon was magical here. The staff, the views, the tranquility—we did not want to leave.", guest: "Chathurika & Ruwan Silva", origin: "Kandy, Sri Lanka" },
+  { quote: "Family-friendly and beautiful. Our children loved the outdoor space and we loved the peace.", guest: "Sithara Fernando", origin: "Negombo, Sri Lanka" }
+];
+
 interface Props {
   cabana: Cabana;
 }
@@ -69,19 +75,54 @@ export function CabanaDetail({ cabana }: Props) {
                 style={{ backgroundImage: `url(${cabana.heroImage})` }}
               />
             </div>
-            <div className="grid gap-3 text-xs text-palm-dark/70 sm:grid-cols-3">
-              {cabana.gallery.map((src) => (
-                <div
-                  key={src}
-                  className="h-28 overflow-hidden rounded-2xl border border-white/40 bg-black/10"
-                  style={{ backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "center" }}
-                />
-              ))}
+            <div className="space-y-6">
+              {cabana.insidePics.length > 0 && (
+                <div>
+                  <h3 className="mb-3 font-display text-sm uppercase tracking-[0.2em] text-palm-dark/80">
+                    Cabana Inside
+                  </h3>
+                  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    {cabana.insidePics.map((src) => (
+                      <div
+                        key={src}
+                        className="h-36 overflow-hidden rounded-2xl border border-white/40 bg-black/10 sm:h-40"
+                        style={{ backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "center" }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
+              {cabana.outsidePics.length > 0 && (
+                <div>
+                  <h3 className="mb-3 font-display text-sm uppercase tracking-[0.2em] text-palm-dark/80">
+                    Cabana Outside
+                  </h3>
+                  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    {cabana.outsidePics.map((src) => (
+                      <div
+                        key={src}
+                        className="h-36 overflow-hidden rounded-2xl border border-white/40 bg-black/10 sm:h-40"
+                        style={{ backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "center" }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </motion.div>
         </div>
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-3">
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="space-y-3">
+            <h2 className="font-display text-lg tracking-[0.08em] text-palm-dark">
+              Room Facilities
+            </h2>
+            <ul className="space-y-2 text-sm text-palm-dark/80">
+              {cabana.roomFacilities.map((f) => (
+                <li key={f}>• {f}</li>
+              ))}
+            </ul>
+          </div>
           <div className="space-y-3">
             <h2 className="font-display text-lg tracking-[0.08em] text-palm-dark">
               Luxury details
@@ -112,6 +153,32 @@ export function CabanaDetail({ cabana }: Props) {
               distraction—so that you can rest, reconnect, or simply exist in
               stillness.
             </p>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="font-display text-xl tracking-[0.08em] text-palm-dark">
+            Guest Feedback
+          </h2>
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {testimonials.map((t, index) => (
+              <motion.figure
+                key={t.guest}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-10%" }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                className="rounded-2xl border border-white/40 bg-white/80 p-5 shadow-subtle backdrop-blur-sm"
+              >
+                <blockquote className="text-sm leading-relaxed text-palm-dark/80">
+                  &ldquo;{t.quote}&rdquo;
+                </blockquote>
+                <figcaption className="mt-3 text-xs text-palm-dark/70">
+                  <div className="font-medium">{t.guest}</div>
+                  <div className="text-palm-dark/50">{t.origin}</div>
+                </figcaption>
+              </motion.figure>
+            ))}
           </div>
         </div>
       </div>

@@ -15,4 +15,15 @@ export const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/5Fq8ZwXVAtSSKgMC7?g_st=i
 // Brand Tagline
 export const BRAND_TAGLINE = "Island Bliss with Every Sip";
 
-
+// Cabana images from Cabana Inside Pics & Cabana Out Pics folders
+export const CABANA_INSIDE_PICS = [
+  "/images/cabana-inside/inside-1.jpeg",
+  "/images/cabana-inside/inside-2.jpeg",
+  "/images/cabana-inside/inside-3.jpeg",
+  "/images/cabana-inside/inside-4.jpeg",
+];
+export const CABANA_OUTSIDE_PICS = [
+  "/images/cabana-outside/outside-1.jpeg",
+  "/images/cabana-outside/outside-2.jpeg",
+  "/images/cabana-outside/outside-3.jpeg",
+];
